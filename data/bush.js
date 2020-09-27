@@ -1,0 +1,80 @@
+export const timers_bush = [
+    {
+        "name":"Redberry",
+        "duration": 100,
+        "type": "Bush",
+        "img": "img_redberry",
+        "key": "48",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "10",
+        skill: "Farming"
+    },
+    {
+        "name":"Cadavaberry",
+        "duration": 120,
+        "type": "Bush",
+        "img": "img_cadavaberry",
+        "key": "49",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "22",
+        skill: "Farming"
+    },
+    {
+        "name":"Dwellberry",
+        "duration": 140,
+        "type": "Bush",
+        "img": "img_dwellberry",
+        "key": "50",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "36",
+        skill: "Farming"
+    },
+    {
+        "name":"Jangerberry",
+        "duration": 160,
+        "type": "Bush",
+        "img": "img_jangerberry",
+        "key": "51",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "48",
+        skill: "Farming"
+    },
+    {
+        "name":"Whiteberry",
+        "duration": 160,
+        "type": "Bush",
+        "img": "img_whiteberry",
+        "key": "52",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "59",
+        skill: "Farming"
+    },
+    {
+        "name":"Poison Ivy",
+        "duration": 160,
+        "type": "Bush",
+        "img": "img_poison_ivy",
+        "key": "53",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "70",
+        skill: "Farming"
+    }
+]

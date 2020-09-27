@@ -1,0 +1,93 @@
+export const timers_hops = [
+    {
+        "name":"Barley",
+        "duration": 40,
+        "type": "Hop",
+        "img": "img_barley",
+        "key": "41",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "3",
+        skill: "Farming"
+    },
+    {
+        "name":"Hammerstone",
+        "duration": 40,
+        "type": "Hop",
+        "img": "img_hammerstone",
+        "key": "42",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "4",
+        skill: "Farming"
+    },
+    {
+        "name":"Asgarnian",
+        "duration": 50,
+        "type": "Hop",
+        "img": "img_asgarnian",
+        "key": "43",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "8",
+        skill: "Farming"
+    },
+    {
+        "name":"Jute",
+        "duration": 50,
+        "type": "Hop",
+        "img": "img_jute",
+        "key": "44",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "13",
+        skill: "Farming"
+    },
+    {
+        "name":"Yanillian",
+        "duration": 60,
+        "type": "Hop",
+        "img": "img_yanillian",
+        "key": "45",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "16",
+        skill: "Farming"
+    },
+    {
+        "name":"Krandorian",
+        "duration": 70,
+        "type": "Hop",
+        "img": "img_krandorian",
+        "key": "46",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "21",
+        skill: "Farming"
+    },
+    {
+        "name":"Wildblood",
+        "duration": 80,
+        "type": "Hop",
+        "img": "img_wildblood",
+        "key": "47",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "28",
+        skill: "Farming"
+    }
+]
