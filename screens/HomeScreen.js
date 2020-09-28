@@ -2,18 +2,17 @@ import React, {Component} from 'react';
 import { Text, TouchableOpacity, View, FlatList, Image, ScrollView, StatusBar, Alert, Dimensions, Platform } from "react-native";
 import AsyncStorage from '@react-native-community/async-storage'
 import PushNotification from 'react-native-push-notification'
-import BackgroundTimer from 'react-native-background-timer'
 import {timers_tree} from '../data/trees.js'
 import {timers_specialTree} from '../data/specialTrees.js'
-import {timers_birdhouse} from '../data/birdhouses.js'
 import {timers_fruitTree} from '../data/fruitTrees.js'
 import {timers_flowers} from '../data/flowers.js'
 import {timers_herb} from '../data/herbs.js'
 import {timers_hops} from '../data/hops.js'
 import {timers_bush} from '../data/bush.js'
 import {timers_allotment} from '../data/allotments.js'
+import {timers_cactus} from '../data/cactus.js'
 import {styles} from '../helper/styles.js'
-import {findIcon, getDoubleNumber} from '../helper/helper.js'
+import {findIcon, getDoubleNumber, getTripleNumber} from '../helper/helper.js'
 
 export default class HomeScreen extends Component {
   state = {
@@ -386,7 +385,7 @@ export default class HomeScreen extends Component {
                   <View style = {styles.stView_main}>
                     <View style={{flexDirection: "row"}}>
                       <View style={{borderRightWidth:0.2, borderColor: "grey",justifyContent:"center", alignItems:"center"}}>
-                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getDoubleNumber(parseInt(item.level))}</Text>
+                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getTripleNumber(parseInt(item.level))}</Text>
                       </View>
                       <Image source={findIcon(item)} style={styles.stImage}></Image>
                       <View style={{flexDirection:"column", flex: 1}}>
@@ -424,7 +423,7 @@ export default class HomeScreen extends Component {
                   <View style = {styles.stView_main}>
                     <View style={{flexDirection: "row"}}>
                       <View style={{borderRightWidth:0.2, borderColor: "grey",justifyContent:"center", alignItems:"center"}}>
-                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5}}>{getDoubleNumber(parseInt(item.level))}</Text>
+                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5}}>{getTripleNumber(parseInt(item.level))}</Text>
                       </View>
                       <Image source={findIcon(item)} style={styles.stImage}></Image>
                       <View style={{flexDirection:"column", flex: 1}}>
@@ -457,14 +456,14 @@ export default class HomeScreen extends Component {
               showsHorizontalScrollIndicator={false}
               data={timers_specialTree}
               keyExtractor={(timer) => { timer.key }}
-              initialNumToRender = {0}
+              initialNumToRender = {3}
               maxToRenderPerBatch={3}
               renderItem={({item}) => {
                 return (
                   <View style = {styles.stView_main}>
                     <View style={{flexDirection: "row"}}>
                       <View style={{borderRightWidth:0.2, borderColor: "grey",justifyContent:"center", alignItems:"center"}}>
-                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getDoubleNumber(parseInt(item.level))}</Text>
+                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getTripleNumber(parseInt(item.level))}</Text>
                       </View>
                       <Image source={findIcon(item)} style={styles.stImage}></Image>
                       <View style={{flexDirection:"column", flex: 1}}>
@@ -498,14 +497,14 @@ export default class HomeScreen extends Component {
               showsHorizontalScrollIndicator={false}
               data={timers_allotment}
               keyExtractor={(timer) => { timer.key }}
-              initialNumToRender = {0}
+              initialNumToRender = {3}
               maxToRenderPerBatch={3}
               renderItem={({item}) => {
                 return (
                   <View style = {styles.stView_main}>
                     <View style={{flexDirection: "row"}}>
                       <View style={{borderRightWidth:0.2, borderColor: "grey",justifyContent:"center", alignItems:"center"}}>
-                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getDoubleNumber(parseInt(item.level))}</Text>
+                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getTripleNumber(parseInt(item.level))}</Text>
                       </View>
                       <Image source={findIcon(item)} style={styles.stImage}></Image>
                       <View style={{flexDirection:"column", flex: 1}}>
@@ -538,14 +537,14 @@ export default class HomeScreen extends Component {
               showsHorizontalScrollIndicator={false}
               data={timers_herb}
               keyExtractor={(timer) => { timer.key }}
-              initialNumToRender = {0}
+              initialNumToRender = {3}
               maxToRenderPerBatch={3}
               renderItem={({item}) => {
                 return (
                   <View style = {styles.stView_main}>
                     <View style={{flexDirection: "row"}}>
                       <View style={{borderRightWidth:0.2, borderColor: "grey",justifyContent:"center", alignItems:"center"}}>
-                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getDoubleNumber(parseInt(item.level))}</Text>
+                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getTripleNumber(parseInt(item.level))}</Text>
                       </View>
                       <Image source={findIcon(item)} style={styles.stImage}></Image>
                       <View style={{flexDirection:"column", flex: 1}}>
@@ -578,14 +577,14 @@ export default class HomeScreen extends Component {
               showsHorizontalScrollIndicator={false}
               data={timers_flowers}
               keyExtractor={(timer) => { timer.key }}
-              initialNumToRender = {0}
+              initialNumToRender = {3}
               maxToRenderPerBatch={3}
               renderItem={({item}) => {
                 return (
                   <View style = {styles.stView_main}>
                     <View style={{flexDirection: "row"}}>
                       <View style={{borderRightWidth:0.2, borderColor: "grey",justifyContent:"center", alignItems:"center"}}>
-                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getDoubleNumber(parseInt(item.level))}</Text>
+                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getTripleNumber(parseInt(item.level))}</Text>
                       </View>
                       <Image source={findIcon(item)} style={styles.stImage}></Image>
                       <View style={{flexDirection:"column", flex: 1}}>
@@ -618,14 +617,14 @@ export default class HomeScreen extends Component {
               showsHorizontalScrollIndicator={false}
               data={timers_hops}
               keyExtractor={(timer) => { timer.key }}
-              initialNumToRender = {0}
+              initialNumToRender = {3}
               maxToRenderPerBatch={3}
               renderItem={({item}) => {
                 return (
                   <View style = {styles.stView_main}>
                     <View style={{flexDirection: "row"}}>
                       <View style={{borderRightWidth:0.2, borderColor: "grey",justifyContent:"center", alignItems:"center"}}>
-                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getDoubleNumber(parseInt(item.level))}</Text>
+                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getTripleNumber(parseInt(item.level))}</Text>
                       </View>
                       <Image source={findIcon(item)} style={styles.stImage}></Image>
                       <View style={{flexDirection:"column", flex: 1}}>
@@ -656,7 +655,7 @@ export default class HomeScreen extends Component {
               <FlatList
               scrollEnabled={false}
               showsHorizontalScrollIndicator={false}
-              initialNumToRender = {0}
+              initialNumToRender = {3}
               maxToRenderPerBatch={3}
               data={timers_bush}
               keyExtractor={(timer) => { timer.key }}
@@ -665,7 +664,7 @@ export default class HomeScreen extends Component {
                   <View style = {styles.stView_main}>
                     <View style={{flexDirection: "row"}}>
                       <View style={{borderRightWidth:0.2, borderColor: "grey",justifyContent:"center", alignItems:"center"}}>
-                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{item.level}</Text>
+                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getTripleNumber(item.level)}</Text>
                       </View>
                       <Image source={findIcon(item)} style={styles.stImage}></Image>
                       <View style={{flexDirection:"column", flex: 1}}>
@@ -689,23 +688,23 @@ export default class HomeScreen extends Component {
               </FlatList>
               <View style= {{flexDirection: "row", height: 40, backgroundColor: "#242f35"}}> 
                 <View style= {{alignContent: "center", justifyContent: "center", alignItems: "center"}}>
-                  <Image style = {{resizeMode:"contain", height: 35, width: 35}} source={require("../assets/img_hunter.png")}></Image>
+                  <Image style = {{resizeMode:"contain", height: 35, width: 35}} source={require("../assets/img_farming.png")}></Image>
                 </View>
-                <Text style = {styles.stText_header}>Birdhouses</Text>
+                <Text style = {styles.stText_header}>Cactus</Text>
               </View>
               <FlatList
               scrollEnabled={false}
               showsHorizontalScrollIndicator={false}
-              initialNumToRender = {0}
+              initialNumToRender = {3}
               maxToRenderPerBatch={3}
-              data={timers_birdhouse}
+              data={timers_cactus}
               keyExtractor={(timer) => { timer.key }}
               renderItem={({item}) => {
                 return (
                   <View style = {styles.stView_main}>
                     <View style={{flexDirection: "row"}}>
                       <View style={{borderRightWidth:0.2, borderColor: "grey",justifyContent:"center", alignItems:"center"}}>
-                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{item.level}</Text>
+                        <Text style={{fontWeight: "bold", color: "#f5ca3f", justifyContent:"center", alignItems:"center", fontFamily: "sans-serif-thin", margin: 5, margin: 5}}>{getTripleNumber(item.level)}</Text>
                       </View>
                       <Image source={findIcon(item)} style={styles.stImage}></Image>
                       <View style={{flexDirection:"column", flex: 1}}>

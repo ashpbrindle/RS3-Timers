@@ -76,5 +76,57 @@ export const timers_bush = [
         time_stamp: -1,
         level: "70",
         skill: "Farming"
+    },
+    {
+        "name":"Barberrt",
+        "duration": 200,
+        "type": "Bush",
+        "img": "img_barberry",
+        "key": "53",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "77",
+        skill: "Farming"
+    },
+    {
+        "name":"Avocado",
+        "duration": 400,
+        "type": "Bush",
+        "img": "img_avocado",
+        "key": "53",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "99",
+        skill: "Farming"
+    },
+    {
+        "name":"Mango",
+        "duration": 400,
+        "type": "Bush",
+        "img": "img_mango",
+        "key": "53",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "105",
+        skill: "Farming"
+    },
+    {
+        "name":"Lychee",
+        "duration": 400,
+        "type": "Bush",
+        "img": "img_lychee",
+        "key": "53",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "111",
+        skill: "Farming"
     }
 ]

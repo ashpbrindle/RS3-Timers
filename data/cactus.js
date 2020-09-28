@@ -1,0 +1,67 @@
+export const timers_cactus = [
+    {
+        "name":"Standard",
+        "duration": 560,
+        "type": "Cactus",
+        "img": "img_cactus",
+        "key": "48",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "55",
+        skill: "Farming"
+    },
+    {
+        "name":"Prickly Pear",
+        "duration": 560,
+        "type": "Cactus",
+        "img": "img_prickly_pear",
+        "key": "48",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "76",
+        skill: "Farming"
+    },
+    {
+        "name":"Potato",
+        "duration": 560,
+        "type": "Cactus",
+        "img": "img_potato_cactus",
+        "key": "48",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "93",
+        skill: "Farming"
+    },
+    {
+        "name":"Dragonfruit",
+        "duration": 560,
+        "type": "Cactus",
+        "img": "img_dragonfruit",
+        "key": "48",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "95",
+        skill: "Farming"
+    },
+    {
+        "name":"Golden Dragonfruit",
+        "duration": 560,
+        "type": "Cactus",
+        "img": "img_golden_dragonfruit",
+        "key": "48",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "116",
+        skill: "Farming"
+    },
+]

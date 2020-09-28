@@ -89,5 +89,31 @@ export const timers_hops = [
         time_stamp: -1,
         level: "28",
         skill: "Farming"
+    },
+    {
+        "name":"Reed",
+        "duration": 80,
+        "type": "Hop",
+        "img": "img_reed",
+        "key": "47",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "78",
+        skill: "Farming"
+    },
+    {
+        "name":"Grapevine",
+        "duration": 80,
+        "type": "Hop",
+        "img": "img_grapevine",
+        "key": "47",
+        "item_status": "Not Running",
+        item_running: false,
+        notify_id: "",
+        time_stamp: -1,
+        level: "95",
+        skill: "Farming"
     }
 ]

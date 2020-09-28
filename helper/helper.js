@@ -39,7 +39,6 @@ export const findIcon = (item) => {
         case "img_fellstalk": return require("../assets/img_fellstalk.png")
         case "img_wergali": return require("../assets/img_wergali.png")
 
-
         case "img_marigold": return require("../assets/img_marigold.png")
         case "img_rosemary": return require("../assets/img_rosemary.png")
         case "img_nasturtium": return require("../assets/img_nasturtium.png")
@@ -55,12 +54,26 @@ export const findIcon = (item) => {
         case "img_yanillian": return require("../assets/img_yanillian.png")
         case "img_krandorian": return require("../assets/img_krandorian.png")
         case "img_wildblood": return require("../assets/img_wildblood.png")
+        case "img_reed": return require("../assets/img_reed.png");
+        case "img_grapevine": return require("../assets/img_grapevine.png");
+
         case "img_redberry": return require("../assets/img_redberry.png")
         case "img_cadavaberry": return require("../assets/img_cadavaberry.png")
         case "img_dwellberry": return require("../assets/img_dwellberry.png")
         case "img_jangerberry": return require("../assets/img_jangerberry.png")
         case "img_whiteberry": return require("../assets/img_whiteberry.png")
         case "img_poison_ivy": return require("../assets/img_poison_ivy.png")
+        case "img_barberry": return require("../assets/img_barberry.png")
+        case "img_avocado": return require("../assets/img_avocado.png")
+        case "img_mango": return require("../assets/img_mango.png")
+        case "img_lychee": return require("../assets/img_lychee.png")
+
+        case "img_cactus": return require("../assets/img_cactus.png")
+        case "img_prickly_pear": return require("../assets/img_prickly_pear.png")
+        case "img_potato_cactus": return require("../assets/img_potato_cactus.png")
+        case "img_dragonfruit": return require("../assets/img_dragonfruit.png")
+        case "img_golden_dragonfruit": return require("../assets/img_golden_dragonfruit.png")
+
         default: break
     }
 }
@@ -69,4 +82,19 @@ export const getDoubleNumber = (number) => {
     var return_value = ""
     number < 10 ? return_value = "0" + number : return_value = number
     return return_value
+}
+
+export const getTripleNumber = (number) => {
+    var return_value = ""
+    if (number < 10) {
+        return_value = "00" + number
+        return return_value
+    }
+    else if (number >= 10 && number < 100) {
+        return_value = "0" + number
+        return return_value
+    }
+    else {
+        return number
+    }
 }
